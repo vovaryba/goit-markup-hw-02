@@ -1,0 +1,63 @@
+/* Палитра цветов 
+#212121 основной цвет текста
+#757575 второй цвет текста
+#FFFFFF третий цвет текста, третий цвет фона
+#000000 лого
+#2196F3 акцент
+rgba(255, 255, 255, 0.6) контакты футер
+#F5F4FA основной цвет фона
+#2F303A второй цвет фона
+*/
+header {
+  background-color: #ffffff;
+  margin-top: 0px;
+}
+body {
+  color: #757575;
+}
+main {
+  background-color: #f5f4fa;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.upcase {
+  text-transform: uppercase;
+}
+.logo {
+  color: #000000;
+}
+.logo-first-part {
+  color: #2196f3;
+}
+.link {
+  color: #212121;
+}
+.current {
+  color: #2196f3;
+}
+.link:hover,
+.link:focus {
+  color: #2196f3;
+}
+.hero {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+
+.order {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.section-title {
+  color: #212121;
+}
+footer {
+  background-color: #2f303a;
+}
+.logo-footer {
+  color: #ffffff;
+}
