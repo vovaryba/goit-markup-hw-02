@@ -1,6 +1,6 @@
 /* Палитра цветов 
-#212121 основной цвет текста
-#757575 второй цвет текста
+#757575 основной цвет текста
+#212121 второй цвет текста
 #FFFFFF третий цвет текста, третий цвет фона
 #000000 лого
 #2196F3 акцент
@@ -8,15 +8,25 @@ rgba(255, 255, 255, 0.6) контакты футер
 #F5F4FA основной цвет фона
 #2F303A второй цвет фона
 */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --tertiary-text-color: #ffffff;
+  --logo-color: #000000;
+  --accent-color: #2196f3;
+  --contacts-footer-color: rgba(255, 255, 255, 0.6);
+  --primary-background-color: #f5f4fa;
+  --secondary-background-color: #2f303a;
+  --tertiary-background-color: #ffffff;
+}
 header {
-  background-color: #ffffff;
-  margin-top: 0px;
+  background-color: var(--tertiary-background-color);
 }
 body {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 main {
-  background-color: #f5f4fa;
+  background-color: var(--primary-background-color);
 }
 ul {
   list-style: none;
@@ -28,36 +38,72 @@ a {
   text-transform: uppercase;
 }
 .logo {
-  color: #000000;
+  color: var(--logo-color);
 }
 .logo-first-part {
-  color: #2196f3;
+  color: var(--accent-color);
 }
-.link {
-  color: #212121;
+.site-nav .link {
+  color: var(--secondary-text-color);
 }
-.current {
-  color: #2196f3;
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
-.link:hover,
-.link:focus {
-  color: #2196f3;
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.address {
+  font-style: normal;
+}
+.site-contacts .contacts {
+  color: var(--primary-text-color);
+}
+.site-contacts .contacts:hover,
+.site-contacts .contacts:focus {
+  color: var(--accent-color);
 }
 .hero {
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--secondary-background-color);
+  color: var(--tertiary-text-color);
 }
-
-.order {
-  background-color: #2196f3;
-  color: #ffffff;
+.hero-order {
+  background-color: var(--accent-color);
+  color: var(--tertiary-text-color);
 }
 .section-title {
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 footer {
-  background-color: #2f303a;
+  background-color: var(--secondary-background-color);
 }
 .logo-footer {
-  color: #ffffff;
+  color: var(--tertiary-text-color);
+}
+.address-footer .address-str {
+  color: var(--tertiary-text-color);
+}
+.address-footer .address-footer-contacts {
+  color: var(--contacts-footer-color);
+}
+.address-footer .address-footer-contacts:hover,
+.address-footer .address-footer-contacts:focus {
+  color: var(--accent-color);
+}
+
+/* portfolio.html */
+.filter .filter-button {
+  background-color: var(--primary-background-color);
+  color: var(--secondary-text-color);
+}
+.filter .filter-button:hover,
+.filter .filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--tertiary-text-color);
+}
+.projects-list .title {
+  color: var(--secondary-text-color);
+}
+.projects-list .text {
+  color: var(--primary-text-color);
 }
